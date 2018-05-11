@@ -20,3 +20,4 @@ I've kept the structure more or less close to Rails (because a lot of people wil
 - You can start the app with `bundle exec rackup` (or `foreman start`, but that somehow breaks pry).
 - Specs are placed under `spec`, each spec should use `require_relative 'spec_helper'`.
   - You can start the specs normally with `bundle exec rspec`
+- There's a `rake console` target to give you a console with access to the whole project.
