@@ -1,0 +1,5 @@
+- move main.rb to sth like app/?
+- dotenv?
+- rake / console?
+- pre-commit
+- travis
