@@ -5,10 +5,13 @@ ENV['RACK_ENV'] ||= 'development'
 $stdout.sync = true
 
 require 'bundler/setup'
+require 'dotenv'
 
 Bundler.require :default
 Bundler.require Sinatra::Base.environment
 
+Dotenv.load
+
 require_all 'config/initializers'
 
-require './main' # TODO: or use sth like require_all 'app'?
+require_all 'app'

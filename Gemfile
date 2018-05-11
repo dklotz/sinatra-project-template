@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'dotenv'
 gem 'puma'
 gem 'rake'
 gem 'require_all'

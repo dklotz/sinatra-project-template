@@ -6,8 +6,6 @@ require_relative '../config/environment'
 require 'rack/test'
 require 'rspec'
 
-require_relative '../main'
-
 module RSpecMixin
   include Rack::Test::Methods
   def app
@@ -20,5 +18,4 @@ RSpec.configure do |config|
   config.filter_run :focus
 
   config.include RSpecMixin
-  # config.include Rack::Test::Methods
 end
