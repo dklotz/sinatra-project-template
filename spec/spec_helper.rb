@@ -6,6 +6,8 @@ require_relative '../config/environment'
 require 'rack/test'
 require 'rspec'
 
+require_all 'spec/support'
+
 module RSpecMixin
   include Rack::Test::Methods
   def app
