@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'dotenv'
+gem 'erubi'
 gem 'puma'
 gem 'rake'
 gem 'require_all'
