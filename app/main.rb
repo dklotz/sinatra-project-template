@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'sinatra'
+require "sinatra"
 
-get '/' do
-  logger.info 'We do have logging!'
+get "/" do
+  logger.info "We do have logging!"
   "hello world: #{settings.environment}"
 end
