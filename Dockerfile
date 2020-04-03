@@ -8,6 +8,7 @@ RUN apt-get update -qq && \
 RUN bundle config --global deployment 'true'
 
 ENV APPLICATION_USER sinatra
+ENV LANG C.UTF-8
 ENV BUNDLE_WITHOUT "development test"
 ENV PORT 4567
 ENV RACK_ENV production
