@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'rubygems'
-require 'bundler/setup'
-require 'dotenv/tasks'
+require "rubygems"
+require "bundler/setup"
+require "dotenv/tasks"
 
 # Do not require rspec in production:
 if ENV["RACK_ENV"] != "production"
@@ -11,17 +11,17 @@ if ENV["RACK_ENV"] != "production"
   task default: :test
   task test: :spec
 
-  desc 'Run all examples'
+  desc "Run all examples"
   RSpec::Core::RakeTask.new(:spec) do |t|
-    t.pattern = Dir['spec/**/*_spec.rb']
+    t.pattern = Dir["spec/**/*_spec.rb"]
   end
 end
 
 task environment: :dotenv do
-  require File.join(File.dirname(__FILE__), 'config/environment')
+  require File.join(File.dirname(__FILE__), "config/environment")
 end
 
-desc 'Start a console with all project dependencies loaded'
+desc "Start a console with all project dependencies loaded"
 task :console do
-  ruby 'script/console'
+  ruby "script/console"
 end
