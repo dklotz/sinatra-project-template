@@ -2,15 +2,15 @@
 
 require 'rubygems'
 require 'bundler/setup'
-require 'rspec/core/rake_task'
 require 'dotenv/tasks'
 
-task default: :test
-task test: :spec
+# Do not require rspec in production:
+if ENV["RACK_ENV"] != "production"
+  require "rspec/core/rake_task"
 
-if !defined?(RSpec)
-  puts 'spec targets require RSpec'
-else
+  task default: :test
+  task test: :spec
+
   desc 'Run all examples'
   RSpec::Core::RakeTask.new(:spec) do |t|
     t.pattern = Dir['spec/**/*_spec.rb']
