@@ -1,6 +1,6 @@
 # Sinatra app template
 
-This is a minimal template for a simple Sinatra app (with current dependencies in 2018).
+This is a minimal template for a simple Sinatra app (with current dependency versions in 2020).
 
 I took a lot of ideas and inspiration from the following projects, but in the end I did not like any of them enough to just use their output:
 - [Hazel](https://github.com/c7/hazel)
