@@ -1,6 +1,6 @@
 # Sinatra app template
 
-This is a minimal template for a simple Sinatra app (with current dependency versions in 2020).
+This is a minimal template for a simple Sinatra app (with current dependency versions as of 2020-06).
 
 I took a lot of ideas and inspiration from the following projects, but in the end I did not like any of them enough to just use their output:
 - [Hazel](https://github.com/c7/hazel)
@@ -17,9 +17,9 @@ I've kept the directory structure somewhat close to Rails (because a lot of peop
 - Files in `config/initializers` are loaded once initially at application startup.
 - `config/environment` configures the necessary basics.
 - The main application sources are located under `app/`.
-- You can start the app with `bundle exec rackup` (or `foreman start`, but that somehow breaks pry).
+- You can start the app with `bundle exec rackup`, `bin/rackup` or `foreman start` (but the latter somehow breaks pry).
 - Specs are placed under `spec`, each spec should use `require_relative 'spec_helper'`.
-  - You can start the specs normally with `bundle exec rspec`
+  - You can start the specs normally with `bundle exec rspec` or `bin/rspec`
 - There's a `rake console` target to give you a console with access to the whole project.
 
 I've also included [dotenv](https://github.com/bkeepers/dotenv) for environment configuration.
