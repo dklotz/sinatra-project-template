@@ -8,5 +8,12 @@ describe "main application" do
     expect(last_response).to be_ok
   end
 
+  it "can also return JSON" do
+    get "/json"
+    expect(last_response).to be_ok
+    expect(last_response.content_type).to eq("application/json")
+    expect(last_response.body).to be_valid_json
+  end
+
   it "should have more specs"
 end

@@ -16,6 +16,12 @@ module RSpecMixin
   end
 end
 
+RSpec::Matchers.define :be_valid_json do
+  match do |actual|
+    JSON.parse(actual)
+  end
+end
+
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
   config.filter_run :focus

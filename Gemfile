@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby IO.read('.ruby-version').strip
+ruby IO.read(".ruby-version").strip
 source "https://rubygems.org"
 
 gem "dotenv"
@@ -9,6 +9,7 @@ gem "puma"
 gem "rake"
 gem "require_all"
 gem "sinatra"
+gem "sinatra-contrib"
 
 # Testing
 group :test do

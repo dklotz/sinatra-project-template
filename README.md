@@ -10,7 +10,7 @@ I took a lot of ideas and inspiration from the following projects, but in the en
 The dependencies are trimmed down to pretty much the minimum, that means you probably still have to take care of the following things:
 
 - Persistence: No ORM/ODM is included by default, you can use ActiveRecord, DataMapper, Sequel, MongoID or whatever you like.
-- Templating: Only ERB is supported by default, you need to add haml(it) or similar if you want to use other template languages.
+- Templating: Only ERB (and JSON) is supported by default, you need to add haml(it) or similar if you want to use other template languages.
 
 I've kept the directory structure somewhat close to Rails (because a lot of people will be familiar with that), that means:
 
@@ -22,6 +22,6 @@ I've kept the directory structure somewhat close to Rails (because a lot of peop
   - You can start the specs normally with `bundle exec rspec` or `bin/rspec`
 - There's a `rake console` target to give you a console with access to the whole project.
 
-I've also included [dotenv](https://github.com/bkeepers/dotenv) for environment configuration.
+I've also included [dotenv](https://github.com/bkeepers/dotenv) for environment configuration and [Sinatra::Reloader](http://sinatrarb.com/contrib/reloader) for live reloading.
 
 In the end this is all just based on my personal preference, so don't expect this to be the perfect template for your own use case.
