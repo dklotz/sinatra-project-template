@@ -1,13 +1,13 @@
 # Sinatra app template
 
-This is a minimal template for a simple Sinatra app (with current dependency versions as of 2020-06).
+This is my template for a simple [Sinatra](http://sinatrarb.com/intro.html) app (with current dependency versions as of 2020-06).
 
 I took a lot of ideas and inspiration from the following projects, but in the end I did not like any of them enough to just use their output:
 - [Hazel](https://github.com/c7/hazel)
 - [Corneal](https://github.com/thebrianemory/corneal)
 - [sinatra-template](https://github.com/zapnap/sinatra-template)
 
-The dependencies are trimmed down to pretty much the minimum, that means you probably still have to take care of the following things:
+The dependencies are trimmed down pretty much, that means you probably still have to take care of the following things:
 
 - Persistence: No ORM/ODM is included by default, you can use ActiveRecord, DataMapper, Sequel, MongoID or whatever you like.
 - Templating:
