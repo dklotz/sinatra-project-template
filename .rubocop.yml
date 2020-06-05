@@ -7,6 +7,20 @@ AllCops:
     - bin/**/*
     - node_modules/**/*
 
+# Configure new cops added during minor 0.8x releases
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+Style/RedundantRegexpEscape:
+  Enabled: true
+Style/SlicingWithRange:
+  Enabled: true
+
 # Disable cops with RuFo incompabilities.
 Layout:
   Enabled: false
