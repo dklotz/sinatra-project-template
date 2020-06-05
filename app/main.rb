@@ -6,7 +6,7 @@ require 'sinatra/reloader' if development?
 
 get "/" do
   logger.info "We do have logging!"
-  "hello world: #{settings.environment}"
+  erb :index
 end
 
 get "/json" do

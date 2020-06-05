@@ -13,6 +13,7 @@ Bundler.require Sinatra::Base.environment
 root_path = File.expand_path(File.join(File.dirname(__FILE__), "../app"))
 set :root, root_path
 set :app_file, "#{root_path}/main.rb"
+set :public_folder, File.expand_path(File.join(File.dirname(__FILE__), "../public"))
 set :erb, escape_html: true
 
 # Sadly, the environment-specific override logic is in dotenv-rails, not dotenv
