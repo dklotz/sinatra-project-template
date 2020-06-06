@@ -19,7 +19,9 @@ RUN chown -R ${APPLICATION_USER}:${APPLICATION_USER} /usr/src/app
 
 USER $APPLICATION_USER
 
-COPY Gemfile Gemfile.lock ./
+RUN gem install bundler
+
+COPY Gemfile Gemfile.lock .ruby-version ./
 RUN bundle install
 
 COPY . .
