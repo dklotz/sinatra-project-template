@@ -23,5 +23,5 @@ end
 
 desc "Start a console with all project dependencies loaded"
 task :console do
-  ruby "script/console"
+  ruby "bin/console"
 end
