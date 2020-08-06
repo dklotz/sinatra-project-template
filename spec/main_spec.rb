@@ -6,6 +6,7 @@ describe "main application" do
   it "shows the default index page" do
     get "/"
     expect(last_response).to be_ok
+    expect(last_response.content_type).to eq("text/html;charset=utf-8")
   end
 
   it "can also return JSON" do
