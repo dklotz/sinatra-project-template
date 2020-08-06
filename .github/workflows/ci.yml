@@ -3,6 +3,9 @@ name: CI
 
 on: push
 
+env:
+  PRECOMMIT: "false"
+
 jobs:
   # Run ruby audit to check for vulnerabilities in used ruby version
   ruby-audit:
