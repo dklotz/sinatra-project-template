@@ -9,7 +9,7 @@ gem "puma"
 gem "rake"
 gem "require_all"
 gem "sinatra"
-gem "sinatra-contrib"
+gem "sinatra-contrib", require: false
 
 # Testing
 group :test do
